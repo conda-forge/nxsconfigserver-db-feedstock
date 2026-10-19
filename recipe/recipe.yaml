@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.11.0"
+  version: "1.11.1"
 
 package:
   name: nxsconfigserver-db
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/nexdatas/nxsconfigserver-db/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: b656e2eed83ed42784d8c50430013ae0eb45730df5c6202182c98ee339a5124a
+  sha256: f84a830a226f9d56add2f0d07f9fdb8249936fa91a2c787741c3f827e5e8a118
 
 build:
   noarch: python
@@ -42,7 +42,7 @@ tests:
   - package_contents:
       files:
         - share/nxsconfigserver/mysql_create.sql
-  
+
 
 about:
   homepage: https://github.com/nexdatas/nxsconfigserver-db
